@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .container{
   border-radius: 7px;
   box-shadow: 5px 8px 13px 5px rgba(0,0,0,0.9);
@@ -6,39 +8,55 @@
   position: relative; 
   top: 5%;
   left: 15%;
+  align-content: center;
 }
 
 
-.logo{
-  height: 80px;
-  margin-left: 15px;
-}
+
 .topBar{
   display: flex;
   align-items: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Lato;
   background-color: rgba(0,0,0,0.0);
-  justify-content: space-between;
-}
+  Height: 52px;
+  margin: 60px;
+  width: auto;
+  padding-top: 30px;
+  
 
+}
+.logo{
+  flex-direction: row;
+  height: 40px;
+  margin-right: 300px;
+}
+.btnCont{
+  flex-direction: row;
+  margin-left: auto;
+  
+}
 .clearBtn{
+  padding-right: 30px;
+  flex-direction: row;
   border-color: rgba(0,0,0,0.0);
   background-color: rgba(0,0,0,0.0);
   color: black;
-  padding: 30px;
+  font-family: Lato;
+
   font-size: 22px;
 }
 
 .logBtn{
-  border-color: lime;
-  font-family: Arial, Helvetica, sans-serif;
-
+  height: 50px;
+  flex-direction: row;
+  border: 2px solid lime;
+  box-sizing: border-box;
+  font-family: Lato;
+  width: 150px;
   font-size: 22px;
-  padding: 10px;
-  border-radius: 7px;
+  border-radius: 14px;
   color: lime;
   background-color: rgba(0, 0, 0, 0);
-  margin-right: 25px;
 }
 
 
@@ -46,20 +64,27 @@
 
 .imageCont{
   
-  margin: 70px;
-  height: 500px;
+  margin: 60px;
+  height: 575px;
   background-image: url('./assets/bg.jpg');
   background-size: cover;
   background-position: 45%;
   padding: 25px;
-  border-radius: 15px;
+  border-radius: 50px;
   position: relative;
+  font-family: Lato;
+  width: auto;
+  box-sizing: border-box;
+
+
   
 }
 
 .imageMenu{
-  left: 70px;
-  bottom: 70px;
+  left: 30px;
+  bottom: 55px;
+  width: 828px;
+  box-sizing: border-box;
   position: absolute;
 }
 
@@ -68,29 +93,35 @@
 }
 .imageRow2{
   display: flex;
-  background-color: rgba(255, 255, 255, 0.55);
-  font-family: Arial, Helvetica, sans-serif;
-
-  width: 400px;
+  background: rgba(255, 255, 255, 0.8);
+box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
+backdrop-filter: blur(20px);
+  font-family: Lato;
+  
+  
   justify-content: space-between;
-  border-radius: 0px 7px 7px 7px;
+  border-radius: 0px 20px 20px 20px;
 
 }
 .imageBtn{
-  border-radius: 7px 7px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   border: 0px;
   color: rgba(0,0,0,0.9);
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(255, 255, 255, 0.55);
+  font-family: Lato;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
+  backdrop-filter: blur(20px);
   padding: 20px;
   font-size: 17px;
+  width: 102px;
 }
 .imageBtn2{
-  border-radius: 7px 7px 0px 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  width: 102px;
+  border-radius: 15px 15px 0px 0px;
+  font-family: Lato;
   border: 0px;
   color: rgba(0,0,0,0.9);
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: rgba(255, 255, 255, 0);
   padding: 20px;
   font-size: 17px;
 }
@@ -100,15 +131,16 @@
   width: 50px;
   font-size: 7px;
   border: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 15px;
+  font-family: lato;
+  padding: 25px;
   border-radius: 11px;
   background-color: rgba(53, 145, 231, 0.7);
 }
 .imageCol{
   margin: auto;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  line-height: 2px;
+  font-family: lato;
 
 }
 
@@ -116,123 +148,178 @@
   background-color: rgba(255, 255, 255, 0.11);
   width: 135px;
   border: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: lato;
+  color: #8F90A6;
 
+}
+.imageCol p{
+  font-size: 18px;
+  font-weight: 600;
+  color: #110229;
 }
 
 .imgTitle{
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-
-  top: 30px;
-  font-size: 40px;
+  font-family: lato;
+  width: 490px;
+  top: -5px;
+  left: 25px;
+  font-size: 56px;
 }
 
 .imgSubtitle{
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-
-  top: 140px;
+  font-family: lato;
+  width: 470px;
+  line-height: 30px;
+  left: 30px;
+  top: 210px;
+  color: #585981;
   font-size: 17px;
+}
+.buttonCont{
+  position: relative;
+}
+.magIcon{
+  left: 12px;
+  top: 12px;
+  position: absolute;
+  width: 25px;
+  color: aliceblue;
 }
 
 /* Section 2 */
 
 .interTitle{
-  font-size: 55px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  margin: 60px;
+}
+.interTitle p{
+  margin: auto;
+  font-size: 38px;
+  font-weight: 600;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  
-
+  font-family: Lato;
+  width: 478px;
+  align-self: center;
 }
 
 .cardRow{
   display: flex;
   align-self: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: auto;
+  box-sizing: border-box;
+  margin: 60px;
+
   justify-content: space-between;
 }
 .cardTitle{
   color: whitesmoke;
-  font-size: 35px;
+  font-size: 24px;
+  font-weight: 600;
   position: absolute;
-  left: 20px;
-  top: 2px;
-  font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 5px 8px 13px 5px rgba(0,0,0,0.9);
-  background-color: rgba(0, 0, 0, 0.1);
+  align-self: center;
+  font-family: Lato;
+  left: 29%;
+  box-sizing: border-box;
   padding: 12px;
+  top: -15px;
 }
 
 .card1{
-  margin: 70px;
-  height: 340px;
-  width: 25vw;
   background-image: url('./assets/card\ 1.jpg');
+  height: 380px;
+  width: 45vw;
   background-size: cover;
-  padding: 25px;
-  border-radius: 15px;
+  border-radius: 30px;
   position: relative;
 }
 .card2{
-  margin: 70px;
-  height: 340px;
-  width: 25vw;
   background-image: url('./assets/card\ 2.jpg');
+  margin-left: 60px;
+  height: 380px;
+  width: 45vw;
   background-size: cover;
-  padding: 25px;
-  border-radius: 15px;
+  border-radius: 30px;
   position: relative;
 }
 .card3{
-  margin: 70px;
-  height: 340px;
-  width: 25vw;
   background-image: url('./assets/card\ 3.jpg');
+  margin-left: 60px;
+  height: 380px;
+  width: 45vw;
   background-size: cover;
-  padding: 25px;
-  border-radius: 15px;
-  background-position: 50%;
-
+  border-radius: 30px;
   position: relative;
 }
 .card4{
-  margin: 70px;
-  height: 340px;
-  width: 25vw;
   background-image: url('./assets/card\ 4.jpg');
+  margin-left: 60px;
+  height: 380px;
+  width: 45vw;
   background-size: cover;
-  padding: 25px;
-  border-radius: 15px;
-  background-position: 50%;
+  border-radius: 30px;
   position: relative;
 }
+.card1:hover{
+  box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32);
+}
+.card2:hover{
+  box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32);
+}
+.card3:hover{
+  box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32);
+}
+.card4:hover{
+  box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32);
+}
+
 
 /* Section 3 */
 .interTitle2{
-  font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  font-family: Lato;
   display: flex;
   justify-content: space-between;
-  padding: 70px;
+margin: 60px;
+  width: auto;
+  box-sizing: border-box;
+  
+
 
 }
 
 .interTitlep2{
   color: rgb(0, 148, 148);
+  
 }
 
 
 .addyCont{
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  box-sizing: border-box;
+  margin: 50px;
+}
+
+.addyCard:hover{
+  box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32);
+  border: .5px solid #1DAEFF;
 }
 
 .addyCard{
-  margin: 20px;
-  padding: 5px;
-  border-radius: 27px;
+  margin: 10px;
+  border-radius: 30px;
   align-items: center;
-  border: 3px solid rgba(58, 58, 58, 0.47);
+  border: .5px solid #DCDCEB;
   display: flex;
   flex-direction: row;
 }
@@ -241,78 +328,89 @@
   background-image: url('./assets/card\ 4.jpg');
   background-size: cover;
   background-position: 50%;
-  width: 150px;
   border-radius: 7px;
-  height: 220px;
+  width: 158px;
+  height: 191px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
-  border-radius: 17px;
+  border-radius: 20px;
 }
 .addyImg2{
   background-image: url('./assets/card\ 1.jpg');
   background-size: cover;
   background-position: 50%;
-  width: 150px;
   border-radius: 7px;
-  height: 220px;
+  width: 158px;
+  height: 191px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
-  border-radius: 17px;
+  border-radius: 20px;
 }
 .addyImg3{
   background-image: url('./assets/card\ 3.jpg');
   background-size: cover;
   background-position: 50%;
-  width: 150px;
   border-radius: 7px;
-  height: 220px;
+  width: 158px;
+  height: 191px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
-  border-radius: 17px;
+  border-radius: 20px;
 }
 
 
 .addyData{
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding-bottom: 10px;
   justify-content: space-between;
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Lato;
   margin-left: 30px;
   margin-right: 30px;
   
 }
 
+
 .addyData p{
+  color: #8F90A6;
+  font-size: 19px;
+  font-weight: 500;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .addyRow{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 19px;
   
 }
 
 .addyBtn{
   border: 0px;
-  background-color: rgba(4, 114, 114, .5);
+  background: #8F90A6;
   color: antiquewhite;
-  border-radius: 11px;
-  font-size: 25px;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 500;
   height: 50px;
   width: 200px;
   margin: auto;
   margin-left: 70px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  letter-spacing: 1px;
 }
 
 .addyTitle{
-  font-size: 33px;
+  font-size: 28px;
+  font-weight: 600;
   margin-top: 3px;
 }
 
@@ -320,35 +418,59 @@
 
 /*  */
 .imageCont2{
-  
-  margin: 70px;
-  height: 250px;
+  width: auto;
+  margin: 60px;
+  height: 450px;
   background-image: url('./assets/card\ 3.jpg');
   background-size: cover;
   background-position: 45%;
-  padding: 25px;
-  border-radius: 15px;
+  border-radius: 50px;
   position: relative;
   padding: 55px;
+  align-self: center;
 }
 
 .imgTitle2{
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-color: aliceblue;
-  top: 30px;
-  font-size: 40px;
+  width: 450px;
+  font-family: Lato;
+  color: rgb(0, 0, 0);
+  top: 45px;
+  left: 72px;
+  font-size: 54px;
+  font-weight: 600;
+  color: #110229;
 }
 
 .imgSubtitle2{
   color: aliceblue;
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-
-  top: 140px;
-  font-size: 17px;
+  font-family: Lato;
+  color: #585981;
+  top: 270px;
+  width: 430px;
+  left: 72px;
+  font-size: 22px;
+  font-weight: 400;
 }
-
+.addyBtn2{
+  border: 0px;
+  background: #1DAEFF;
+  border-radius: 14px;
+  color: antiquewhite;
+  font-size: 19px;
+  font-weight: 500;
+  height: 50px;
+  width: 194px;
+  margin: auto;
+  padding: 15px;
+  bottom: -90px;
+  position: absolute;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  letter-spacing: 1px;
+}
 
 
 /*  */
@@ -358,33 +480,44 @@ color: aliceblue;
   display: flex;
   flex-direction: row;
   align-items: left;
-  font-family: Arial, Helvetica, sans-serif;
+  width: auto;
+  box-sizing: border-box;
+  font-family: Lato;
   background-color: rgba(0,0,0,0.0);
   justify-content: space-between;
-  margin: 70px;
+  margin: 60px;
+  
 }
 
 
 .logo2{
   width: 180px;
 }
-
+.social{
+  width: 22px;
+  padding-right: 30px;
+}
 .bottomCol p{
   margin-top: 20px;
   width: 300px;
   color: gray;
-  
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 10px;
 
 }
 .bottomCol label{
-  font-weight: bold;
-  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  padding-right: 5px;
+  padding-bottom: 10px;
 }
 
 .bottomCol{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  float: left;
+  align-items: flex-start;
 }
 
 .clearBtn2{
@@ -397,8 +530,12 @@ color: aliceblue;
 
 .footerInp{
   border-radius: 7px;
-  width: 280px;
-  height: 40px;
+  width: 277px;
+height: 54px;
+  background: #FFFFFF;
+  border: 2px solid #D0D0E3;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 
 .inpDiv{
@@ -408,13 +545,23 @@ color: aliceblue;
 
 .inpBtn{
   position: absolute;
-  width: 40px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border: 0px;
-  border-radius: 7px;
-  right: 20px;
-  top: 8px;
+  border-radius: 21px;
+  right: 12px;
+  top: 9px;
   background-color: rgba(16, 156, 180, 0.801);
 }
+
+.arrow{
+  width: 15px;
+  left: 240px;
+  top: 18px;
+  position: absolute;
+  color: aliceblue;
+
+}
+
 
 
